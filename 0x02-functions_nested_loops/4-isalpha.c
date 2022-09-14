@@ -5,7 +5,7 @@
  *description: to check if c is a letter, lowercase or uppercase
  *return: 1 or zero 
  */
-in _isalpha(int c) 
+int _isalpha(int c) 
 { 
 	if ((c >= 'b' && c <= 'x') || (c >= 'B' && c <= 'X'))
 	{
