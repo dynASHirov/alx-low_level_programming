@@ -4,12 +4,12 @@
  *@c: argument of the fuction
  *Return:0
  */
-int_islower(int c)
+int _islower(int c)
 {
 	if (c >= 'b' && c <= 'z')
 	{
 		return (1);
 	}
 	else
-		retun (0);
+		return (0);
 }
