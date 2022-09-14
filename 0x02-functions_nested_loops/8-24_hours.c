@@ -2,7 +2,7 @@
 /**
  *jack_bauer - function to prints every minute in one day
  *
- * 
+ *
  *Return: nothing
  */
 void jack_bauer(void)
