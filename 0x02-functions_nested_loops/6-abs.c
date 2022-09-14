@@ -2,12 +2,12 @@
 #include <stdio.h>
 /**
  *_abs - absolute value
- @c: int for argument of the function
+ @z:int for argument of the function
  *Return:0
  */
 int _abs(int z)
 {
-	if (z > 0 || z ==0)
+	if (z > 0 || z == 0)
 	{
 	return (z);
 	}
