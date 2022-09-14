@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  *_abs - absolute value
- @z:int for argument of the function
+ *@z: int for argument of the function
  *Return:0
  */
 int _abs(int z)
