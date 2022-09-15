@@ -1,5 +1,3 @@
-TASK 2
-
 #include "main.h"
 
 /**
