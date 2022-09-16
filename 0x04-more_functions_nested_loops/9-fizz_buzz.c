@@ -1,74 +1,44 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
-*print_triangle - prints a triangle
-*@size:size parameter of triangle
-*Return: returns nothing
-*/
-
-void print_triangle(int size)
-{
-	int inc1, inc2;
-
-	if (size > 0)
-	{
-		for (inc1 = 1; inc1 <= size; inc1++)
-		{
-			for ((inc2 = size - inc1); inc2 > 0; inc2--)
-			{
-				putchar(' ');
-			}
-
-			for (inc2 = 0; inc2 < inc1; inc2++)
-			{
-				putchar('#');
-			}
-
-			if (inc1 == size)
-			{
-				continue;
-			}
-
-			putchar('\n');
-		}
-	}
-	putchar('\n');
-}
-
-
-========================================
-
-TASK 11
-
-#include <stdio.h>
-
-/**
-*main- prints the largest prime factor
-*of a number
+*main - program that prints either number
+*or fizz or buzz or fizzBuzz
+*
 *
 *Return: returns 0
 */
 
 int main(void)
 {
-	long number = 612852475143;
-	int inc;
+	int num = 1;
 
-	while (inc++ < number / 2)
+	while (num++ < 100)
 	{
-	if (number % inc == 0)
-	{
-		number /= 2;
-		continue;
+		if ((num % 3 == 0) && (num % 5 == 0))
+		{
+			printf("FizzBuzz ");
+		}
+		else if ((num % 3) == 0)
+		{
+			printf("Fizz ");
+		}
+		else if ((num % 5) == 0)
+		{
+			if (num != 100)
+			{
+				printf("Buzz ");
+			}
+			else
+			{
+				printf("Buzz");
+			}
+		}
+		else
+		{
+			printf("%d ", num);
+		}
 	}
+	printf("\n");
 
-	for (inc = 3; inc < number / 2; inc += 2)
-	{
-		if (number % inc == 0)
-			number /= inc;
-	}
-	}
-	printf("%ld\n", number);
 	return (0);
 }
