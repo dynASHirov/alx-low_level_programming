@@ -5,7 +5,6 @@
  * @dest: input string
  * @src: input string
  * @n: The number of bytes
- *
  * Return: A pointer to the resulting string dest.
  */
 char *_strncat(char *dest, char *src, int n)
