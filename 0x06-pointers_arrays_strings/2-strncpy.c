@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * _strcmp -function tha Compares pointers to two strings.
+ * _strncpy -function tha Compares pointers to two strings.
  * @s1: input string to be compared.
  * @s2: input string to be compared.
  *
