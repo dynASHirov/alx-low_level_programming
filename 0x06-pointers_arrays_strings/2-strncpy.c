@@ -1,20 +1,26 @@
 #include "main.h"
-#include <string.h>
 
 /**
- * _strncpy -function tha Compares pointers to two strings.
- * @s1: input string to be compared.
- * @s2: input string to be compared.
+ * _strncpy -function to  copy an inputted number
+ * 	of bytes
+ * @dest: input string.
+ * @src: source string.
+ * @n: The maximum number of bytes to copied from src.
  *
- * Return: The difference.
+ * Return: A pointer to the resulting string dest.
  */
-int _strncpy(char *s1, char *s2)
+char *_strncpy(char *dest, char *src, int n)
 {
-	while (*s1 && *s2)
-	{
-		if (*s1 != *s2)
-			return (*s1 - *s2);
-		s1++, s2++;
-	}
-	return (*s1 - *s2);
+	int index = 0, src_len = 0;
+
+	while (src[index++])
+		src_len++;
+
+	for (index = 0; src[index] && index < n; index++)
+		dest[index] = src[index];
+
+	for (index = src_len; index < n; index++)
+		dest[index] = '\0';
+
+	return (dest);
 }
