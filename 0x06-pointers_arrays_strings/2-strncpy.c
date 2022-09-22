@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _strncpy -function to  copy an inputted number
- * 	of bytes
+ * _strncpy -function to copy an inputted number
+ * of bytes
  * @dest: input string.
  * @src: source string.
  * @n: The maximum number of bytes to copied from src.
