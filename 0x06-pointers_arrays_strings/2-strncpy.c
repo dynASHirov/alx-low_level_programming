@@ -8,7 +8,7 @@
  *
  * Return: The difference.
  */
-int strncpy(char *s1, char *s2)
+int _strncpy(char *s1, char *s2)
 {
 	while (*s1 && *s2)
 	{
