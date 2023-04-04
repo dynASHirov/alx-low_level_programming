@@ -7,17 +7,18 @@
  */
 int main(void)
 {
-	int c, i;
+	int alph;
+	int beta;
 
-	for (c = '0'; c <= '9'; c++)
+	for (alph = '0'; alph <= '9'; alph++)
 {
-	for (i = '0'; i <= '9'; i++)
+	for (beta = '1'; beta <= '9'; beta++)
 {
-	if (c < i)
+	if (alph < beta && alph != beta)
 {
-	putchar(c);
-	putchar(i);
-	if (c != '8' || (c == '8' && i != '9'))
+	putchar (alph);
+	putchar (beta);
+	if (alph != '8' || beta != '9')
 {
 	putchar(',');
 	putchar(' ');
