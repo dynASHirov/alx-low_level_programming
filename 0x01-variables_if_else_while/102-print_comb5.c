@@ -5,39 +5,36 @@
  *
  *Return: Always (Success)
  */
+
 int main(void)
 {
-	int c, i, k, j;
+	int a, b, c, d;
 
-	for (c = 48; c <= 57; c++)
-{
-	for (i = 48; i <= 57; i++)
-{
-	for (k = 48; k <= 57; k++)
-{
-	for (j = 48; j <= 57; j++)
-{
-	if (((k + j) > (c + i) &&  k >= c) || c < k)
-{
-	putchar(c);
-	putchar(i);
-	putchar(' ');
-	putchar(k);
-	putchar(j);
-	if (c + i + k + j == 227 && c == 57)
-{
-	break;
-}
-else
-{
-	putchar(',');
-	putchar(' ');
-}
-}
-}
-}
-}
-}
+	for (a = '0'; a <= '9'; a++)
+	{
+		for (b = '0'; b <= '9'; b++)
+		{
+			for (c = '0'; c <= '9'; c++)
+			{
+				for (d = '1'; d <= '9'; d++)
+				{
+					if (a <= c && b <= d && b != d)
+						{
+							putchar(a);
+							putchar(b);
+							putchar(' ');
+							putchar(c);
+							putchar(d);
+								if (b != '8' || a != '9' || c != '9' || d != '9')
+							{
+								putchar(',');
+								putchar(' ');
+							}
+						}
+				}
+			}
+		}
+	}
 	putchar('\n');
 	return (0);
 }
