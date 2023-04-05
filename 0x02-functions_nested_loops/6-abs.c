@@ -2,15 +2,15 @@
 #include <stdio.h>
 /**
  *_abs - absolute value
- *@z: int for argument of the function
+ *@a: int for argument of the function
  *Return:0
  */
-int _abs(int z)
+int _abs(int a)
 {
-	if (z > 0 || z == 0)
+	if (a < 0)
 	{
-	return (z);
+	return (a * -1);
 	}
 	else
-	return (z * -1);
+	return a;
 }
