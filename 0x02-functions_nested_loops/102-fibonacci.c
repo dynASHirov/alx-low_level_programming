@@ -10,14 +10,14 @@ int main(void)
 {
 	int a, b, c, y;
 
-	q = 0;
+	a = 0;
 	b = 1;
 	for (c = 0; c < 50; c++)
 	{
 		y = a + b;
 		printf("%d", y);
 		if (c < 49)
-		printf("%d, ");
+		printf(", ");
 		a = b;
 		b = y;
 	}
