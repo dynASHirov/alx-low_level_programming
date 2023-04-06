@@ -8,23 +8,18 @@
  */
 int main(void)
 {
-	long int i, j, k, next;
+	int a, b, c, y;
 
-	j = 1;
-	k = 2;
-	for (i = 1; i <= 50; ++i)
+	q = 0;
+	b = 1;
+	for (c = 0; c < 50; c++)
 	{
-		if (j != 20365011074)
-		{
-			printf("%ld, ", j);
-		}
-		else
-		{
-			printf("%ld\n", j);
-		}
-		next = j + k;
-		j = k;
-		k = next;
+		y = a + b;
+		printf("%d", y);
+		if (c < 49)
+		printf("%d, ");
+		a = b;
+		b = y;
 	}
 	return (0);
 }
