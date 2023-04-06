@@ -16,7 +16,7 @@ int main(void)
 	for (c = 0; c < 50; c++)
 	{
 		y = a + b;
-		printf("%d", y);
+		printf("%ld", y);
 		if (c < 49)
 		printf(", ");
 		a = b;
