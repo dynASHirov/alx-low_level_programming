@@ -22,5 +22,6 @@ int main(void)
 		a = b;
 		b = y;
 	}
+	printf("\n");
 	return (0);
 }
