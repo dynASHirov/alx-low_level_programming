@@ -12,9 +12,7 @@ int main()
       y = a + b;
       if ((y % 2) == 0 && y < 4000000)
         z = z + y;
-      //printf("%ld", y);
-      //if (c < 49)
-      //printf(", ");
+     
       
       a = b;
       b = y;
