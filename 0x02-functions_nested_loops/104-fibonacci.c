@@ -14,4 +14,5 @@ int main()
     b = c;
   }
   printf("\n");
+	return(0);
 }
