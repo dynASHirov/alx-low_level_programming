@@ -9,7 +9,9 @@ int main()
   for (x = 0; x <= 98; x++)
   {
     c = a + b;
-    printf("%lu, ", c); 
+    printf("%lu", c); 
+	if (x < 98)
+	printf(", ");
     a = b;
     b = c;
   }
