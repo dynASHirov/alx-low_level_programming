@@ -9,23 +9,24 @@
 
 int main(void)
 {
-	long number = 612852475143;
-	int inc;
+long a = 612852475143;
+long int b, c, d;
 
-	while (inc++ < number / 2)
+	for (b = 2; b <= a; b++)
 	{
-	if (number % inc == 0)
+	d = a / b;
+	if (d)
 	{
-		number /= 2;
-		continue;
+		if (a % b == 0)
+		{
+			if (b == a)
+			{
+			printf("%lu", b);
+			}
+			a = d;
+			b = 1;
+		}
 	}
-
-	for (inc = 3; inc < number / 2; inc += 2)
-	{
-		if (number % inc == 0)
-			number /= inc;
 	}
-	}
-	printf("%ld\n", number);
-	return (0);
+	printf("\n");
 }
