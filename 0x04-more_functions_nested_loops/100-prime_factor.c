@@ -10,7 +10,7 @@
 int main(void)
 {
 long a = 612852475143;
-long int b, c, d;
+long int b, d;
 
 	for (b = 2; b <= a; b++)
 	{
@@ -29,4 +29,5 @@ long int b, c, d;
 	}
 	}
 	printf("\n");
+	return (0);
 }
