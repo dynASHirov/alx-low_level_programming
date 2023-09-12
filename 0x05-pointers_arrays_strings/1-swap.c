@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
-  * swap : function that swap the valu of two integers
-  *
-**/
+ * swap_int - function that swap the valu of two integers
+ * @a : an integer input pointer.
+ * @b : an integer input pointer.
+ * return : always 0
+ */
 
 void swap_int(int *a, int *b)
 {
@@ -11,5 +13,5 @@ void swap_int(int *a, int *b)
 
 	temp = *a;
 	*a = *b;
-	*b = temp; 
+	*b = temp;
 }
