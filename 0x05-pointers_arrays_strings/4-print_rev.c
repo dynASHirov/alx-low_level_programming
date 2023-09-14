@@ -8,13 +8,15 @@
 
 void print_rev(char *s)
 {
-	int x = 0;
+int len = 0;
+	char st[] = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+for (len = 0; st[len] != '\0'; len++)
+{}
+while (len)
+{
+	--len;
+	_putchar(st[len]);
 
-	while (s[x] != '\0')
-		x++;
-
-	while (x)
-		_putchar(s[--x]);
-
+}
 	_putchar('\n');
 }
