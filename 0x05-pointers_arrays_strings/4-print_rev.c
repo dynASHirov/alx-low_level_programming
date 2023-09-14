@@ -9,13 +9,13 @@
 void print_rev(char *s)
 {
 int len = 0;
-	char st[] = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-for (len = 0; st[len] != '\0'; len++)
+
+for (len = 0; s[len] != '\0'; len++)
 {}
 while (len)
 {
 	--len;
-	_putchar(st[len]);
+	_putchar(s[len]);
 
 }
 	_putchar('\n');
