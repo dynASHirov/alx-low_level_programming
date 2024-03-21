@@ -9,9 +9,9 @@
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	hash_node_t *node;
 	unsigned long int index = 0;
-	char *val = NULL;
+	char *value = NULL;
+	hash_node_t *node;
 
 	if (!ht || !key)
 		return (NULL);
@@ -23,11 +23,11 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 		return (NULL);
 
 	node = ht->array[index];
-	while (!val)
+	while (!value)
 	{
 		if (strcmp(node->key, key) == 0)
-			val = node->value;
+			value = node->value;
 		node = node->next;
 	}
-	return (val);
+	return (value);
 }
